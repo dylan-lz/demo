@@ -10,4 +10,9 @@ function drag(id){
 	obj.onclick=function(){
 		alert("我被点击了");
 	}
+	obj.hover(function() {
+		
+	}, function() {
+		
+	});
 }
