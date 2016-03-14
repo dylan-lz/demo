@@ -4,7 +4,10 @@ function drag(id){
 	var divY = 0;
 	obj.onmouseover =function(){
 		function(){
-			
+
 		}
+	}
+	obj.onclick=function(){
+		alert("我被点击了");
 	}
 }
