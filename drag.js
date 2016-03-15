@@ -12,6 +12,6 @@ function drag(id){
 	}
 	document.onmouseup = function(){
 		document.onmousemove = null;
-		document.onmousedown = nulg;
+		document.onmousedown = null;
 	}
 }
