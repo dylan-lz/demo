@@ -10,4 +10,8 @@ function drag(id){
 			obj.style.top = ev.clintY -divY;
 		}
 	}
+	document.onmouseup = function(){
+		document.onmousemove = null;
+		document.onmousedown = nulg;
+	}
 }
