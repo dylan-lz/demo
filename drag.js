@@ -5,5 +5,9 @@ function drag(id){
 	document.onmousedown=function(ev){
 		divX = ev.clintX - obj.offsetLeft;
 		divY = ev.clintY - obj.offsetTop;
+		document.onmousemove = function(){
+			obj.style.left = ev.clintX -divX;
+			obj.style.top = ev.clintY -divY;
+		}
 	}
 }
