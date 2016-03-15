@@ -2,17 +2,8 @@ function drag(id){
 	var obj = document.getElementById(id);
 	var divX = 0;
 	var divY = 0;
-	obj.onmouseover =function(){
-		function(){
-
-		}
+	document.onmousedown=function(ev){
+		divX = ev.clintX - obj.offsetLeft;
+		divY = ev.clintY - obj.offsetTop;
 	}
-	obj.onclick=function(){
-		alert("我被点击了");
-	}
-	obj.hover(function() {
-		
-	}, function() {
-		
-	});
 }
